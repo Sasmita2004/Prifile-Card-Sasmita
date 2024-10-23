@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #e5e5e5;
+        }
+
+        .wrapper {
+            width: 350px; /* Width of the wrapper */
+            height: 610px; /* Height of the wrapper */
+            background: #e5e5e5; /* Background color */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Padding on all sides */
+            box-shadow: 4px 4px 12px #c0c0c0, -4px -4px 12px #fff; /* Box shadow */
+            position: relative; /* Relative positioning for back arrow */
+            overflow-y: auto; /* Allow scrolling if content overflows */
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 25px; /* Adjusted position */
+            left: 25px; /* Adjusted position */
+            font-size: 1.5em; /* Adjusted font size for better visibility */
+            color: #f95052; /* Arrow color */
+            transition: color 0.3s; /* Smooth color transition */
+            cursor: pointer;
+        }
+
+        .back-btn:hover {
+            color: #333; /* Change color on hover */
+        }
+
+        .skills-title {
+            text-align: center; /* Center title */
+            color: #0b0c0c;
+            margin-bottom: 65px; /* Space below title */
+            font-size: 1.5em; /* Adjust font size */
+        }
+
+        .skills-grid {
+            display: grid; /* Use grid for better layout */
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            gap: 22px; /* Space between icons */
+        }
+
+        .skill-icon {
+            width: 60px; /* Set fixed width for icons */
+            height: 60px; /* Set fixed height for icons */
+            background: #d3d3d3; /* Default background */
+            border-radius: 50%; /* Make it round */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 12px #bebebe, -5px -5px 12px #ffffff;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-icon img {
+            width: 60%; /* Responsive size for the icon */
+            height: 60%; /* Ensure consistent height */
+        }
+
+        .skill-icon:hover {
+            background-color: #f0a500; /* Color change on hover */
+            box-shadow: inset 5px 5px 12px #bebebe, inset -5px -5px 12px #ffffff; /* Inset shadow */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i></a> <!-- Back button -->
+       <h3> <div class="skills-title">My Skills</div> <!-- Title for skills -->
+       </h3>
+        <div class="skills-grid">
+            <!-- Skill icons -->
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=html" alt="HTML Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=css" alt="CSS Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=python" alt="Python Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://www.northware.mx/wp-content/uploads/2022/09/northware-microsoft-power-bi-logo.png" alt="PowerBI Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=mysql" alt="SQL Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=ai" alt="AI Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=aws" alt="Deep Learning Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=sklearn" alt="Deep Learning Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=opencv" alt="Deep Learning Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=arduino" alt="Deep Learning Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=matlab" alt="Deep Learning Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=googlecloud" alt="Deep Learning Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=git" alt="Git Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="https://skillicons.dev/icons?i=figma" alt="Figma Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="canva.png" alt="Canva Icon">
+            </div>
+            <div class="skill-icon">
+                <img src="adobe.jpeg" alt="Adobe Icon">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
